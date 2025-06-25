@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: url('imagesaquarium-bg.jpg') no-repeat center center fixed;
+      background: #0a2329 url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80') no-repeat center center fixed;
       background-size: cover;
       font-family: 'Segoe UI', Arial, sans-serif;
       color: #fff;
@@ -17,7 +17,7 @@
       justify-content: center;
     }
     .club-form-container {
-      background: #022b34;
+      background: rgba(2, 43, 52, 0.92); /* Semi-transparent so background shows through */
       border-radius: 16px;
       border: 3px solid #00f6ff;
       max-width: 480px;
@@ -26,6 +26,7 @@
       margin: 24px;
       text-align: center;
       box-shadow: 0 8px 32px rgba(0,255,255,0.11);
+      backdrop-filter: blur(3px);
     }
     .club-form-logo {
       width: 80px;
@@ -89,6 +90,32 @@
       margin-top: 30px;
       font-weight: bold;
       text-shadow: 0 2px 10px rgba(0,255,255,0.07);
+    }
+    /* Responsive styles for mobile */
+    @media (max-width: 600px) {
+      body {
+        align-items: flex-start;
+        padding: 0;
+      }
+      .club-form-container {
+        max-width: 98vw;
+        width: 100vw;
+        margin: 12px 0;
+        padding: 20px 8px 18px 8px;
+        border-radius: 10px;
+      }
+      .club-form-title {
+        font-size: 1.3rem;
+      }
+      .club-form input,
+      .club-form button {
+        font-size: 1rem;
+        padding: 12px 8px;
+      }
+      .club-form-logo {
+        width: 56px;
+        height: 56px;
+      }
     }
   </style>
 </head>
