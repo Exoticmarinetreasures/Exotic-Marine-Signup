@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Join the Exotic Marine Treasures Club</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      background: #0a2329;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .club-form-container {
+      background: #022b34;
+      border-radius: 16px;
+      border: 3px solid #00f6ff;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 32px 32px 32px;
+      margin: 24px;
+      text-align: center;
+      box-shadow: 0 8px 32px rgba(0,255,255,0.11);
+    }
+    .club-form-logo {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-bottom: 12px;
+      border-radius: 12px;
+      box-shadow: 0 2px 20px rgba(0,246,255,0.1);
+      background: #000;
+    }
+    .club-form-title {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #00f6ff;
+      margin: 16px 0 8px;
+    }
+    .club-form-desc {
+      color: #b2e8f7;
+      font-size: 1.06rem;
+      margin-bottom: 28px;
+      line-height: 1.4;
+    }
+    .club-form input {
+      display: block;
+      width: 100%;
+      margin: 12px 0 0 0;
+      padding: 15px 12px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: none;
+      background: #fff;
+      color: #222;
+      outline: none;
+      box-shadow: 0 2px 8px rgba(0,255,255,0.04);
+      transition: border-color 0.2s;
+    }
+    .club-form input:focus {
+      border: 2px solid #00f6ff;
+    }
+    .club-form button {
+      width: 100%;
+      margin-top: 20px;
+      padding: 16px 0;
+      background: #00f6ff;
+      color: #033;
+      font-size: 1.13rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 7px;
+      cursor: pointer;
+      box-shadow: 0 2px 12px rgba(0,255,255,0.13);
+      transition: background 0.18s;
+    }
+    .club-form button:hover {
+      background: #12e1ea;
+    }
+  </style>
+</head>
+<body>
+  <div class="club-form-container">
+    <!-- Logo inserted here -->
+    <img src="logo.png" alt="Exotic Marine Treasures Logo" class="club-form-logo">
+    <div class="club-form-title">
+      Join the Exotic Marine Treasures Club
+    </div>
+    <div class="club-form-desc">
+      First access to rare coral drops, fish arrivals &amp; VIP service deals—straight to your inbox.
+    </div>
+    <form class="club-form" autocomplete="on">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="phone" placeholder="Phone (optional)">
+      <button type="submit">Join Now — It’s Free</button>
+    </form>
+  </div>
+</body>
+</html>
